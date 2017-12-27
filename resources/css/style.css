@@ -1,0 +1,89 @@
+/* global styling */
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.container {
+  display: flex;
+  max-width: 960px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* banner and header styling */
+.topimage {
+  background-image: url("../images/glasses-bg.png");
+  height: 31rem;
+  background-repeat: no-repeat;
+  background-position: centre;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+.lefthead, .righthead {
+  display: flex;
+  align-items: center;
+}
+
+.lefthead img {
+  height: 1.5rem;
+  width: auto;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.lefthead span {
+  font-size: 1rem;
+  color: white;
+}
+
+ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  padding-right: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.banner {
+  position: absolute;
+  top: 10rem;
+  right: -2rem;
+  background-color: white;
+}
+
+.banner h1 {
+  padding: 1.5rem 5rem;
+}
+
+/* icon styling */
+
+/* philosophy styling */
+
+/* footer styling */
