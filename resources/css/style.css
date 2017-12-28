@@ -60,9 +60,13 @@ h1 {
   color: white;
 }
 
-ul {
+.largescreen {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.smallscreen {
+  display: none;
 }
 
 li {
@@ -77,13 +81,80 @@ a {
 
 .banner {
   position: absolute;
-  top: 10rem;
+  top: 13rem;
   right: -2rem;
   background-color: white;
 }
 
 .banner h1 {
   padding: 1.5rem 5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .topimage {
+    height: 22rem;
+  }
+
+  .header {
+    display: flex;
+    position: relative;
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .banner {
+    top: 8rem;
+    right: 2rem;
+  }
+
+  .banner h1 {
+    padding: 0.75rem 4rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .largescreen {
+    display: none;
+  }
+
+  .smallscreen {
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .topimage {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .lefthead span {
+    display: none;
+  }
+
+  .banner {
+    top: 12rem;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+  }
+
+  .banner h1 {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
 }
 
 /* icon styling */
@@ -120,6 +191,35 @@ a {
   width: 5rem;
 }
 
+@media only screen and (max-width: 470px) {
+  .icons {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+
+  }
+
+  .pics {
+    height: auto;
+  }
+
+  .pics img {
+    margin-bottom: 1rem;
+  }
+
+  .pics p {
+    font-size: 0.77rem;
+  }
+
+  .fittings {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.54rem;
+    margin-bottom: 1.54rem;
+  }
+}
+
 /* philosophy styling */
 .content {
   display: flex;
@@ -150,6 +250,31 @@ a {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 470px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .philosophy {
+    margin-right: 0;
+  }
+
+  .philosophy, .appointments {
+    width: auto;
+    justify-content: center;
+  }
+
+  .conthead {
+    width: 100%;
+  }
+
+  .conttext {
+    margin-bottom: 4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+
 /* footer styling */
 .container.footer {
   display: flex;
@@ -166,4 +291,14 @@ a {
   width: auto;
   padding-left: 4rem;
   padding-right: 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .footer span {
+    display: none;
+  }
+
+  .container.footer {
+    justify-content: center;
+  }
 }
